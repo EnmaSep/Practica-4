@@ -1,0 +1,46 @@
+<!--Elabore el siguiente programa:
+
+Formulario HTML donde el usuario va a ingresar sus platos favoritos.
+
+Cada vez que el usuario ingrese un plato y pulse el boton de guardar, ingresarlo en un arreglo.
+
+Cuando el usuario pulse otro botón, el boton de mostrar, mostrar todos los platos ingresados en una tabla HTML.
+
+Agregar la funcionalidad de modificar y de eliminar cualquiera de los platos mostrados en la tabla. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica #4</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+  
+
+  <form>
+    <label for="Plato">Plato Favorito</label>
+    <input type="name" placeholder="Insertar Plato" id="Plato">
+  </form>
+
+  <br>
+
+  <button onclick="saveFood()">Guardar</button>
+  <button onclick="showFood(favFoods)">Mostrar</button>
+
+  <h4></h4> 
+
+  <table border="1" class="table">
+    <tr>
+        <th>Comida Favorita</th>
+        <th>Modificar</th>
+    </tr>
+
+    <tbody id="foodTable"></tbody>
+  </table>
+
+  <script src="xd.js"></script>
+</body>
+</html>
